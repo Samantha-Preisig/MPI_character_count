@@ -8,9 +8,9 @@ An implementation of a simple parallelized program that calculates and visualize
 
 ## How to run mpicc.c:
   1. Compile by utilizing the make tool provided by the Makefile: `make` or `make mpicc`
-    - Note: mpicc.c will be executed with mpiexec
+- Note: mpicc.c will be executed with mpiexec
   2. Execute mpicc.c with the following command line arguments: `mpiexec -n [num_nodes] ./mpicc [-l] [-s] [filename]`
-    - Since mpicc.c is executed using mpiexe, we must execute the program using mpiexec followed by -n and the number of MPI nodes you want executing mpicc.
-    - `-l` is an optional flag indicating the output should be a letter count histogram. If this flag is not provided, simple number counts are displayed.
-    - `-s` is an optional flag indicating the histogram must be saved to a text file called `out.txt` in addition to displaying the histogram to stdout. If this flag is not provided, output is not saved.
-    - `filename` is the name of the file you want to analyze.
+  - Since mpicc.c is executed using mpiexe, we must execute the program using mpiexec followed by -n and the number of MPI nodes you want executing mpicc.
+- `-l` is an optional flag indicating the output should be a letter count histogram. If this flag is not provided, simple number counts are displayed.
+- `-s` is an optional flag indicating the histogram must be saved to a text file called `out.txt` in addition to displaying the histogram to stdout. If this flag is not provided, output is not saved.
+- `filename` is the name of the file you want to analyze.
