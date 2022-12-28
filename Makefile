@@ -1,8 +1,8 @@
 CC = gcc
 CFLAGS = -Wpedantic -std=gnu99
 
-A2:
-	mpicc -g -Wall -std=c99 -o A2 A2.c
+mpi_cc:
+	mpi_cc -g -Wall -std=c99 -o mpi_cc mpi_cc.c
 
 clean:
-	rm -i *.o A2
+	rm -i *.o mpi_cc
